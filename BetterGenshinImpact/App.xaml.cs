@@ -1,6 +1,7 @@
 using System;
 using System.Diagnostics;
 using System.IO;
+using System.Globalization;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Threading;
@@ -51,6 +52,12 @@ public partial class App : Application
                 var configService = new ConfigService();
                 services.AddSingleton<IConfigService>(sp => configService);
                 var all = configService.Get();
+
+                var uiCulture = new CultureInfo(all.OtherConfig.UiCultureInfoName);
+                CultureInfo.CurrentCulture = uiCulture;
+                CultureInfo.CurrentUICulture = uiCulture;
+                CultureInfo.DefaultThreadCurrentCulture = uiCulture;
+                CultureInfo.DefaultThreadCurrentUICulture = uiCulture;
 
                 var logFolder = Path.Combine(AppContext.BaseDirectory, "log");
                 Directory.CreateDirectory(logFolder);

@@ -38,26 +38,27 @@
             <ui:TextBlock Grid.Row="0"
                           Margin="0,0,0,8"
                           FontTypography="BodyStrong"
-                          Text="自定义 Javascript 脚本（实验功能）" />
+                          Text="{Binding Localizer[CustomScriptsTitle]}" />
             <ui:TextBlock Grid.Row="1"
                           Margin="0,0,0,8"
                           Foreground="{ui:ThemeResource TextFillColorTertiaryBrush}"
                           TextWrapping="Wrap">
-                可以通过 Javascript 调用 BetterGI 在原神中的各项能力。请在调度器中使用！
+                <Run Text="{Binding Localizer[CustomScriptsDescription]}" />
+                <Run Text=" " />
                 <Hyperlink Command="{Binding GoToJsScriptUrlCommand}"
                            Foreground="{ui:ThemeResource TextFillColorSecondaryBrush}">
-                    点击查看 Javascript 脚本使用与编写教程
+                    <Run Text="{Binding Localizer[CustomScriptsGuideLink]}" />
                 </Hyperlink>
             </ui:TextBlock>
 
             <StackPanel Grid.Row="2" Orientation="Horizontal">
                 <ui:Button Command="{Binding OpenScriptsFolderCommand}"
-                           Content="打开脚本目录"
+                           Content="{Binding Localizer[OpenScriptsFolder]}"
                            Icon="{ui:SymbolIcon FolderOpen24}" />
                 <Separator Width="10" Opacity="0" />
                 <ui:Button Command="{Binding OpenLocalScriptRepoCommand}" Icon="{ui:SymbolIcon Archive24}">
                     <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-                        <ui:TextBlock>脚本仓库</ui:TextBlock>
+                        <ui:TextBlock Text="{Binding Localizer[ScriptRepository]}" />
                         <ui:InfoBadge Margin="0,-8,-14,0"
                                       HorizontalAlignment="Right"
                                       VerticalAlignment="Top"
@@ -110,14 +111,26 @@
                 <ListView.View>
                     <GridView ColumnHeaderContainerStyle="{StaticResource GridViewColumnHeaderDarkStyle}">
                         <GridViewColumn Width="{Binding ElementName=Col1, Path=ActualWidth}"
-                                        DisplayMemberBinding="{Binding FolderName}"
-                                        Header="目录" />
+                                        DisplayMemberBinding="{Binding FolderName}">
+                            <GridViewColumn.Header>
+                                <TextBlock DataContext="{Binding DataContext, RelativeSource={RelativeSource AncestorType=local:JsListPage}}"
+                                           Text="{Binding Localizer[ScriptDirectoryHeader]}" />
+                            </GridViewColumn.Header>
+                        </GridViewColumn>
                         <GridViewColumn Width="{Binding ElementName=Col2, Path=ActualWidth}"
-                                        DisplayMemberBinding="{Binding Manifest.Name}"
-                                        Header="名称" />
+                                        DisplayMemberBinding="{Binding Manifest.Name}">
+                            <GridViewColumn.Header>
+                                <TextBlock DataContext="{Binding DataContext, RelativeSource={RelativeSource AncestorType=local:JsListPage}}"
+                                           Text="{Binding Localizer[ScriptNameHeader]}" />
+                            </GridViewColumn.Header>
+                        </GridViewColumn>
                         <GridViewColumn Width="{Binding ElementName=Col3, Path=ActualWidth}"
-                                        DisplayMemberBinding="{Binding Manifest.Version}"
-                                        Header="版本" />
+                                        DisplayMemberBinding="{Binding Manifest.Version}">
+                            <GridViewColumn.Header>
+                                <TextBlock DataContext="{Binding DataContext, RelativeSource={RelativeSource AncestorType=local:JsListPage}}"
+                                           Text="{Binding Localizer[ScriptVersionHeader]}" />
+                            </GridViewColumn.Header>
+                        </GridViewColumn>
                         <!--<GridViewColumn Width="{Binding ElementName=Col4, Path=ActualWidth}" Header="操作">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
@@ -137,13 +150,13 @@
                     <ContextMenu>
                         <MenuItem Command="{Binding OpenScriptProjectFolderCommand}"
                                   CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ContextMenu}, Path=PlacementTarget.SelectedItem}"
-                                  Header="打开目录" />
+                                  Header="{Binding DataContext.Localizer[ContextOpenDirectory], RelativeSource={RelativeSource AncestorType=local:JsListPage}}" />
                         <MenuItem Command="{Binding StartRunCommand}"
                                   CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ContextMenu}, Path=PlacementTarget.SelectedItem}"
-                                  Header="执行脚本" />
+                                  Header="{Binding DataContext.Localizer[ContextRunScript], RelativeSource={RelativeSource AncestorType=local:JsListPage}}" />
                         <MenuItem Command="{Binding RefreshCommand}"
                                   CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ContextMenu}, Path=PlacementTarget.SelectedItem}"
-                                  Header="刷新" />
+                                  Header="{Binding DataContext.Localizer[ContextRefresh], RelativeSource={RelativeSource AncestorType=local:JsListPage}}" />
                     </ContextMenu>
                 </ListBox.ContextMenu>
                 <ListView.Style>

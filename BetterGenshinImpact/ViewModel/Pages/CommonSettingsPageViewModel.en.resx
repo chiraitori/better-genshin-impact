@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="?" xml:space="preserve">
+    <value>?</value>
+  </data>
+  <data name="BGI UI Language" xml:space="preserve">
+    <value>BGI UI Language</value>
+  </data>
+  <data name="BGI界面语言" xml:space="preserve">
+    <value>BGI Interface Language</value>
+  </data>
+  <data name="CommonSettingsPage" xml:space="preserve">
+    <value>Common Settings</value>
+  </data>
+  <data name="Game Language" xml:space="preserve">
+    <value>Game Language</value>
+  </data>
+  <data name="OCR 相关配置，面向进阶用户。" xml:space="preserve">
+    <value>Advanced OCR options for experienced users.</value>
+  </data>
+  <data name="OCR 配置" xml:space="preserve">
+    <value>OCR Configuration</value>
+  </data>
+  <data name="PaddleOCR模型" xml:space="preserve">
+    <value>PaddleOCR Model</value>
+  </data>
+  <data name="aaaaaaa" xml:space="preserve">
+    <value>aaaaaaa</value>
+  </data>
+  <data name="cookie" xml:space="preserve">
+    <value>Cookie</value>
+  </data>
+  <data name="cookie与调度器日志处同步" xml:space="preserve">
+    <value>Synchronize the cookie with scheduler logs.</value>
+  </data>
+  <data name="xxxxxxxxxxxxxxxxxxxxxxxx" xml:space="preserve">
+    <value>xxxxxxxxxxxxxxxxxxxxxxxx</value>
+  </data>
+  <data name="【&gt;600】大于这个距离会缩小地图以加快传送" xml:space="preserve">
+    <value>【&gt;600】Zoom the map out when distances exceed this to speed up teleports.</value>
+  </data>
+  <data name="【1.0-30.0】传送到七天神像之后需要等待多久恢复血量" xml:space="preserve">
+    <value>【1.0-30.0】How long to wait after teleporting to a Statue of The Seven before healing.</value>
+  </data>
+  <data name="【100-2000】 过大可能会导致鼠标移动出窗口" xml:space="preserve">
+    <value>【100-2000】Values that are too large may move the cursor outside the window.</value>
+  </data>
+  <data name="【2-100】数字越小移动鼠标的速度越快，如果移动地图时产生卡顿，请提高这个数值" xml:space="preserve">
+    <value>【2-100】Smaller numbers move the cursor faster; increase it if map movement stutters.</value>
+  </data>
+  <data name="【200-600】小于这个距离会放大地图以提高移动的精度" xml:space="preserve">
+    <value>【200-600】Distances below this zoom the map in for better precision.</value>
+  </data>
+  <data name="【测试版】非常不稳定，请谨慎选择更新！" xml:space="preserve">
+    <value>【Beta】Highly unstable—update with caution!</value>
+  </data>
+  <data name="七天神像区域" xml:space="preserve">
+    <value>Statue of The Seven area</value>
+  </data>
+  <data name="七天神像国家" xml:space="preserve">
+    <value>Statue of The Seven nation</value>
+  </data>
+  <data name="七天神像设置" xml:space="preserve">
+    <value>Statue of The Seven settings</value>
+  </data>
+  <data name="传送到七天神像之后是否需要移动后回血" xml:space="preserve">
+    <value>Move after teleporting to the statue before restoring HP.</value>
+  </data>
+  <data name="使按键绑定设置对外部脚本生效" xml:space="preserve">
+    <value>Make key binding settings available to external scripts.</value>
+  </data>
+  <data name="使用米游社数据（大概两三小时延时），对锄地数量进行修正，由于米游社cookie在一段时间后会失效，需要重新获取，所以如果当天存在米游社的数据，则上限需按照下面配置的来，否则按照上方配置的限制来（考虑到锄地之外的杀怪，如狗粮卡时间，所以估算值可能不一样）。" xml:space="preserve">
+    <value>Use HoYoLAB data (about a 2–3 hour delay) to adjust farming counts. Because the HoYoLAB cookie expires after a period of time, it must be refreshed. If data is available for the day, use the limits configured below; otherwise use the limits above (real combat may differ because of external kills).</value>
+  </data>
+  <data name="修改设置后重启生效，可能存在使游戏崩溃的BUG" xml:space="preserve">
+    <value>Takes effect after restarting; may cause game crashes.</value>
+  </data>
+  <data name="关于 BetterGI" xml:space="preserve">
+    <value>About BetterGI</value>
+  </data>
+  <data name="其他设置" xml:space="preserve">
+    <value>Other settings</value>
+  </data>
+  <data name="单次鼠标移动的最大距离" xml:space="preserve">
+    <value>Maximum distance per mouse movement</value>
+  </data>
+  <data name="启用UID遮盖" xml:space="preserve">
+    <value>Enable UID masking</value>
+  </data>
+  <data name="启用保存截图功能（开发者）" xml:space="preserve">
+    <value>Enable screenshot saving (developer)</value>
+  </data>
+  <data name="启用全局按键映射" xml:space="preserve">
+    <value>Enable global key remapping</value>
+  </data>
+  <data name="启用后将自动向七天神像方向移动" xml:space="preserve">
+    <value>Automatically move toward the statue once enabled</value>
+  </data>
+  <data name="启用后将自动选择最近的七天神像，忽略下方指定位置" xml:space="preserve">
+    <value>Automatically pick the nearest statue when enabled, ignoring the manual selection below.</value>
+  </data>
+  <data name="启用后点击右上角退出按钮会最小化到系统托盘继续运行，右键托盘图标退出" xml:space="preserve">
+    <value>When enabled, clicking the close button minimizes to the system tray; right-click the tray icon to exit.</value>
+  </data>
+  <data name="启用遮罩窗口" xml:space="preserve">
+    <value>Enable mask window</value>
+  </data>
+  <data name="回血等待间隔（秒）" xml:space="preserve">
+    <value>Healing wait interval (seconds)</value>
+  </data>
+  <data name="围绕游戏窗口紫色的边框线" xml:space="preserve">
+    <value>Purple border surrounding the game window</value>
+  </data>
+  <data name="在小地图周围显示东南西北的文字" xml:space="preserve">
+    <value>Show cardinal directions around the minimap</value>
+  </data>
+  <data name="在遮罩内显示实时任务启用状态" xml:space="preserve">
+    <value>Display real-time task status inside the mask</value>
+  </data>
+  <data name="地图放大的距离" xml:space="preserve">
+    <value>Map zoom-in threshold distance</value>
+  </data>
+  <data name="地图移动过程中是否缩放地图" xml:space="preserve">
+    <value>Zoom the map while moving across it</value>
+  </data>
+  <data name="地图缩小的距离" xml:space="preserve">
+    <value>Map zoom-out threshold distance</value>
+  </data>
+  <data name="地图追踪优先使用的特征匹配方式" xml:space="preserve">
+    <value>Preferred feature-matching method for map tracking</value>
+  </data>
+  <data name="大地图地图传送设置" xml:space="preserve">
+    <value>World map teleport settings</value>
+  </data>
+  <data name="如果你有游戏内改键需求，请在此配置对应的改键" xml:space="preserve">
+    <value>Configure in-game key remaps here when needed</value>
+  </data>
+  <data name="如果需要使用其他模型，请在此处选择。" xml:space="preserve">
+    <value>Choose a different model here if required.</value>
+  </data>
+  <data name="实时显示各种图像识别的结果" xml:space="preserve">
+    <value>Display image recognition results in real time</value>
+  </data>
+  <data name="导入" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="帮助" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="建议开启，关闭该设置可能在运行部分脚本时发生错误" xml:space="preserve">
+    <value>Recommended to enable; disabling may cause some scripts to fail.</value>
+  </data>
+  <data name="开启后，当每日（4点开始）统计锄地超过上限（需脚本支持，勾选允许锄地统计标志，或通过追踪文件目录的控制文件，来记录各追踪文件数据），会跳过接下来的锄地任务。" xml:space="preserve">
+    <value>When enabled, if daily farming totals (reset at 4:00) exceed the limit—requires scripts that support farming stats or control files in the tracking folder—subsequent farming tasks are skipped.</value>
+  </data>
+  <data name="开启后，当调度器日志更改，或此处更改，都会同步其cookie。" xml:space="preserve">
+    <value>When enabled, update the cookie whenever the scheduler logs or this field change.</value>
+  </data>
+  <data name="异常次数" xml:space="preserve">
+    <value>Failure count</value>
+  </data>
+  <data name="当调度器任务异常抛出未预期错误时，累计一定次数后，自动重启bgi，以恢复功能。" xml:space="preserve">
+    <value>When scheduler tasks throw unexpected errors a set number of times, automatically restart BGI to recover.</value>
+  </data>
+  <data name="当运行调度器任务时，异常导致任务失败的计数，当达到计数时会重启bgi。" xml:space="preserve">
+    <value>Count how many scheduler tasks fail due to exceptions; restart BGI when the count is reached.</value>
+  </data>
+  <data name="当锄地小怪数量到达上限时，会跳过主目标为小怪的锄地脚本。" xml:space="preserve">
+    <value>Skip farming scripts targeting normal mobs once the normal mob limit is reached.</value>
+  </data>
+  <data name="当锄地精英数量到达上限时，跳过主目标为精英的锄地脚本。" xml:space="preserve">
+    <value>Skip farming scripts targeting elite mobs once the elite limit is reached.</value>
+  </data>
+  <data name="影响所有地图追踪功能，重启后生效" xml:space="preserve">
+    <value>Affects all map tracking features; takes effect after restart.</value>
+  </data>
+  <data name="战斗失败算异常" xml:space="preserve">
+    <value>Treat combat failure as an exception</value>
+  </data>
+  <data name="截图功能主要用于错误排查，训练素材快速获取等开发相关功能" xml:space="preserve">
+    <value>Screenshot capture is mainly for debugging, collecting training data, and other developer workflows.</value>
+  </data>
+  <data name="截图快捷键" xml:space="preserve">
+    <value>Screenshot hotkey</value>
+  </data>
+  <data name="截图遮盖UID" xml:space="preserve">
+    <value>Mask UID in screenshots</value>
+  </data>
+  <data name="手动导入本地脚本仓库（zip格式）" xml:space="preserve">
+    <value>Manually import a local script repository (ZIP)</value>
+  </data>
+  <data name="按键绑定设置" xml:space="preserve">
+    <value>Key binding settings</value>
+  </data>
+  <data name="日小怪上限" xml:space="preserve">
+    <value>Daily normal mob limit</value>
+  </data>
+  <data name="日精英上限" xml:space="preserve">
+    <value>Daily elite mob limit</value>
+  </data>
+  <data name="是否同时重启游戏" xml:space="preserve">
+    <value>Also restart the game</value>
+  </data>
+  <data name="是否就近七天神像恢复血量" xml:space="preserve">
+    <value>Heal at the nearest statue</value>
+  </data>
+  <data name="显示图像识别结果" xml:space="preserve">
+    <value>Display recognition results</value>
+  </data>
+  <data name="显示实时任务启用状态" xml:space="preserve">
+    <value>Show real-time task status</value>
+  </data>
+  <data name="显示小地图方位" xml:space="preserve">
+    <value>Show minimap cardinal directions</value>
+  </data>
+  <data name="显示日志窗口" xml:space="preserve">
+    <value>Display log window</value>
+  </data>
+  <data name="显示游戏FPS（实验功能）" xml:space="preserve">
+    <value>Show in-game FPS (experimental)</value>
+  </data>
+  <data name="显示遮罩边框" xml:space="preserve">
+    <value>Show mask border</value>
+  </data>
+  <data name="查看" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="查看地图" xml:space="preserve">
+    <value>Open map</value>
+  </data>
+  <data name="查看地图（开发者）" xml:space="preserve">
+    <value>Open map (developer)</value>
+  </data>
+  <data name="查看当前识别到的位置" xml:space="preserve">
+    <value>View the currently detected position</value>
+  </data>
+  <data name="查看项目、文档等信息" xml:space="preserve">
+    <value>View project information, documentation, and more</value>
+  </data>
+  <data name="检查是否存在最新测试版" xml:space="preserve">
+    <value>Check for the latest beta build</value>
+  </data>
+  <data name="检查更新" xml:space="preserve">
+    <value>Check for updates</value>
+  </data>
+  <data name="检查软件是否有新版本可用" xml:space="preserve">
+    <value>Check whether a new version of the software is available</value>
+  </data>
+  <data name="游戏失去焦点时候，强制恢复激活游戏窗口" xml:space="preserve">
+    <value>Force the game window back to the foreground when it loses focus</value>
+  </data>
+  <data name="游戏语言" xml:space="preserve">
+    <value>Game language</value>
+  </data>
+  <data name="版本更新" xml:space="preserve">
+    <value>Version updates</value>
+  </data>
+  <data name="生成的截图会遮盖右下角的UID区域" xml:space="preserve">
+    <value>Captured screenshots will mask the UID area in the lower-right corner.</value>
+  </data>
+  <data name="用于地图追踪、自动秘境、一条龙等功能中传送功能的配置" xml:space="preserve">
+    <value>Configuration for teleport features used by map tracking, auto domains, one-click flow, and similar tasks</value>
+  </data>
+  <data name="用于指定回血的七天神像" xml:space="preserve">
+    <value>Choose which statue to use for healing</value>
+  </data>
+  <data name="用于配置米游社相关的信息如cookie" xml:space="preserve">
+    <value>Configure HoYoLAB-related information such as the cookie</value>
+  </data>
+  <data name="直接从 Github 获取最新测试版" xml:space="preserve">
+    <value>Fetch the latest beta directly from GitHub</value>
+  </data>
+  <data name="米游社cookie" xml:space="preserve">
+    <value>HoYoLAB cookie</value>
+  </data>
+  <data name="米游社相关" xml:space="preserve">
+    <value>HoYoLAB related</value>
+  </data>
+  <data name="绑定快捷键" xml:space="preserve">
+    <value>Bind hotkey</value>
+  </data>
+  <data name="结合米游社数据计算" xml:space="preserve">
+    <value>Combine with HoYoLAB data</value>
+  </data>
+  <data name="脚本仓库无法在线更新时使用" xml:space="preserve">
+    <value>脚本仓库无法在线更新时使用</value>
+  </data>
+  <data name="设定一些其他功能的配置，失去焦点自动恢复等" xml:space="preserve">
+    <value>Configure other features such as restoring focus after losing it</value>
+  </data>
+  <data name="访问 Github" xml:space="preserve">
+    <value>Visit GitHub</value>
+  </data>
+  <data name="调度器异常重启配置" xml:space="preserve">
+    <value>Scheduler auto-restart settings</value>
+  </data>
+  <data name="调度器路径追踪任务中，打开大地图准备传送时，会首先检测是否存在需要领取的派遣任务，如果存在，则自动领取委托（调用一条龙领取奖励逻辑），选择领取城市后生效。" xml:space="preserve">
+    <value>During scheduler path tracking, when opening the world map to teleport, first check for expeditions that can be claimed; if any exist, automatically claim them (using the one-click reward logic). Takes effect after selecting the city to claim.</value>
+  </data>
+  <data name="调度器路径追踪任务大地图传送过程中自动领取委托" xml:space="preserve">
+    <value>Auto-claim expeditions while the scheduler path tracking task teleports via the world map</value>
+  </data>
+  <data name="路径未完全走完算异常" xml:space="preserve">
+    <value>Treat an incomplete route as an exception</value>
+  </data>
+  <data name="软件设置" xml:space="preserve">
+    <value>Application settings</value>
+  </data>
+  <data name="退出时最小化到系统托盘" xml:space="preserve">
+    <value>Minimize to the system tray when exiting</value>
+  </data>
+  <data name="适用于调度器任务和部分独立任务，失去焦点后，将自动激活游戏窗口，开启此项后，如果想切出游戏窗口，可以先暂停任务，之后再切出" xml:space="preserve">
+    <value>For scheduler and some standalone tasks, automatically reactivate the game window when it loses focus. If you need to alt-tab, pause the task first before switching out.</value>
+  </data>
+  <data name="选择七天神像所在区域" xml:space="preserve">
+    <value>Select the statue area</value>
+  </data>
+  <data name="选择七天神像所在国家" xml:space="preserve">
+    <value>Select the statue nation</value>
+  </data>
+  <data name="通用功能设置" xml:space="preserve">
+    <value>General feature settings</value>
+  </data>
+  <data name="遮盖右下角的UID区域" xml:space="preserve">
+    <value>Mask the bottom-right UID area</value>
+  </data>
+  <data name="遮罩以原神子窗体方式启动（实验功能）" xml:space="preserve">
+    <value>Launch the mask as a Genshin child window (experimental)</value>
+  </data>
+  <data name="遮罩能够完全跟随窗体移动，但存在一些BUG，此配置重启后生效" xml:space="preserve">
+    <value>Allows the mask to fully follow the window, but has bugs; takes effect after restart.</value>
+  </data>
+  <data name="配置" xml:space="preserve">
+    <value>Configure</value>
+  </data>
+  <data name="重启后生效" xml:space="preserve">
+    <value>Takes effect after restart</value>
+  </data>
+  <data name="锄地规划配置" xml:space="preserve">
+    <value>Farming plan configuration</value>
+  </data>
+  <data name="鼠标移动的时间间隔（毫秒）" xml:space="preserve">
+    <value>Mouse movement interval (milliseconds)</value>
+  </data>
+  <data name="在遮罩内显示日志窗口，" xml:space="preserve">
+    <value>Show the log window inside the mask,</value>
+  </data>
+  <data name="点击打开日志文件夹" xml:space="preserve">
+    <value>Click to open the log folder</value>
+  </data>
+  <data name="可以通过快捷键保存截图，文件保存在" xml:space="preserve">
+    <value>Save screenshots via hotkey; files are stored in</value>
+  </data>
+  <data name="重启bgi时，同时重启游戏，需开启首页启动配置：同时启动原神、自动进入游戏，此配置才会生效。" xml:space="preserve">
+    <value>When restarting BGI, restart the game as well. Requires the home auto-start options “Launch Genshin Impact” and “Auto-enter game” to be enabled.</value>
+  </data>
+  <data name="在锄地脚本中，实际战斗成功次数大于等于预期战斗次数，才能成功，否则抛出异常。可以解决锄地时，应打开地图失败、切换队伍、或卡在按Z的切换界面、卡月卡等，可能导致的无限卡死。但需要确定自己的队伍练度，有无可能连续超过配置失败次数个脚本都复活超次，导致判断失败，从而触发无限重启。" xml:space="preserve">
+    <value>For farming scripts, count the run as successful only if actual combat wins meet or exceed expectations; otherwise throw an exception. This helps recover from getting stuck when map opening, team switching, Z prompts, or resin prompts fail. Ensure your team is strong enough to avoid repeated failures that might trigger continuous restarts.</value>
+  </data>
+  <data name="比战斗失败更严格的条件，勾选此项下，追踪文件，如果未执行完，算失败。此项勾选需要自身的追踪任务稳定性高。可以先关观察日志，打开异常情况统计下，有无连续标红超过失败次数的情况，有则不建议勾选。" xml:space="preserve">
+    <value>A stricter condition than combat failure: if the tracking route does not finish, count it as a failure. Only enable if your tracking tasks are stable—check the logs for consecutive red failures beyond the configured limit before turning this on.</value>
+  </data>
+  <data name="脚本仓库无法在线新时使用" xml:space="preserve">
+    <value>Use when the script repository cannot be updated online</value>
+  </data>
+</root>

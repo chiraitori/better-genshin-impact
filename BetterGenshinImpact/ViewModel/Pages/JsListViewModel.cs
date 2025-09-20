@@ -21,6 +21,7 @@ using BetterGenshinImpact.View.Controls.Drawer;
 using BetterGenshinImpact.View.Controls.Webview;
 using BetterGenshinImpact.ViewModel.Message;
 using CommunityToolkit.Mvvm.Messaging;
+using Microsoft.Extensions.Localization;
 using Microsoft.Web.WebView2.Wpf;
 using Wpf.Ui;
 using Wpf.Ui.Violeta.Controls;
@@ -40,6 +41,8 @@ public partial class JsListViewModel : ViewModel
 
     private readonly IScriptService _scriptService;
 
+    public IStringLocalizer<JsListViewModel> Localizer { get; }
+
     public AllConfig Config { get; set; }
 
     public DrawerViewModel DrawerVm { get; } = new DrawerViewModel();
@@ -57,10 +60,14 @@ public partial class JsListViewModel : ViewModel
     [ObservableProperty]
     private bool _isRightClickSelection;
 
-    public JsListViewModel(IScriptService scriptService, IConfigService configService)
+    public JsListViewModel(
+        IScriptService scriptService,
+        IConfigService configService,
+        IStringLocalizer<JsListViewModel> localizer)
     {
         _scriptService = scriptService;
         Config = configService.Get();
+        Localizer = localizer;
 
         // 注册消息
         WeakReferenceMessenger.Default.Register<RefreshDataMessage>(this, (r, m) => InitScriptListViewData());
@@ -78,7 +85,7 @@ public partial class JsListViewModel : ViewModel
             }
             catch (Exception e)
             {
-                Toast.Warning($"脚本 {f.Name} 载入失败：{e.Message}");
+                Toast.Warning(Localizer["ScriptLoadFailed", f.Name, e.Message]);
             }
         }
     }
@@ -122,8 +129,9 @@ public partial class JsListViewModel : ViewModel
 
         if (!string.IsNullOrEmpty(item.Manifest.SettingsUi))
         {
-            Toast.Information("此脚本存在配置，不配置可能无法正常运行，建议请添加至【调度器】，并右键修改配置后使用！");
-            _logger.LogWarning("此脚本存在配置，可能无法直接从脚本界面运行，建议请添加至【调度器】，并右键修改配置后使用！");
+            var warning = Localizer["ScriptHasConfigurationWarning"].Value;
+            Toast.Information(warning);
+            _logger.LogWarning(warning);
         }
 
         await _scriptService.RunMulti([new ScriptGroupProject(item)]);

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ContextOpenDirectory" xml:space="preserve">
+    <value>打开目录</value>
+  </data>
+  <data name="ContextRefresh" xml:space="preserve">
+    <value>刷新</value>
+  </data>
+  <data name="ContextRunScript" xml:space="preserve">
+    <value>执行脚本</value>
+  </data>
+  <data name="CustomScriptsDescription" xml:space="preserve">
+    <value>可以通过 Javascript 调用 BetterGI 在原神中的各项能力。请在调度器中使用！</value>
+  </data>
+  <data name="CustomScriptsGuideLink" xml:space="preserve">
+    <value>点击查看 Javascript 脚本使用与编写教程</value>
+  </data>
+  <data name="CustomScriptsTitle" xml:space="preserve">
+    <value>自定义 Javascript 脚本（实验功能）</value>
+  </data>
+  <data name="OpenScriptsFolder" xml:space="preserve">
+    <value>打开脚本目录</value>
+  </data>
+  <data name="ScriptDirectoryHeader" xml:space="preserve">
+    <value>目录</value>
+  </data>
+  <data name="ScriptHasConfigurationWarning" xml:space="preserve">
+    <value>此脚本存在配置，不配置可能无法正常运行，建议请添加至【调度器】，并右键修改配置后使用！</value>
+  </data>
+  <data name="ScriptLoadFailed" xml:space="preserve">
+    <value>脚本 {0} 载入失败：{1}</value>
+  </data>
+  <data name="ScriptNameHeader" xml:space="preserve">
+    <value>名称</value>
+  </data>
+  <data name="ScriptRepository" xml:space="preserve">
+    <value>脚本仓库</value>
+  </data>
+  <data name="ScriptVersionHeader" xml:space="preserve">
+    <value>版本</value>
+  </data>
+</root>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ContextOpenDirectory" xml:space="preserve">
+    <value>Mở thư mục</value>
+  </data>
+  <data name="ContextRefresh" xml:space="preserve">
+    <value>Làm mới</value>
+  </data>
+  <data name="ContextRunScript" xml:space="preserve">
+    <value>Chạy script</value>
+  </data>
+  <data name="CustomScriptsDescription" xml:space="preserve">
+    <value>Bạn có thể gọi các khả năng của BetterGI trong Genshin Impact thông qua JavaScript. Hãy sử dụng trong Bộ lập lịch!</value>
+  </data>
+  <data name="CustomScriptsGuideLink" xml:space="preserve">
+    <value>Xem hướng dẫn viết script JavaScript</value>
+  </data>
+  <data name="CustomScriptsTitle" xml:space="preserve">
+    <value>Script JavaScript tùy chỉnh (tính năng thử nghiệm)</value>
+  </data>
+  <data name="OpenScriptsFolder" xml:space="preserve">
+    <value>Mở thư mục script</value>
+  </data>
+  <data name="ScriptDirectoryHeader" xml:space="preserve">
+    <value>Thư mục</value>
+  </data>
+  <data name="ScriptHasConfigurationWarning" xml:space="preserve">
+    <value>Script này có cấu hình. Nếu không thiết lập có thể chạy không đúng. Hãy thêm vào Bộ lập lịch và sửa cấu hình trước khi sử dụng!</value>
+  </data>
+  <data name="ScriptLoadFailed" xml:space="preserve">
+    <value>Tải script {0} thất bại: {1}</value>
+  </data>
+  <data name="ScriptNameHeader" xml:space="preserve">
+    <value>Tên</value>
+  </data>
+  <data name="ScriptRepository" xml:space="preserve">
+    <value>Kho script</value>
+  </data>
+  <data name="ScriptVersionHeader" xml:space="preserve">
+    <value>Phiên bản</value>
+  </data>
+</root>
