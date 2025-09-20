@@ -45,6 +45,8 @@ public partial class CommonSettingsPageViewModel : ViewModel
     private readonly NotificationService _notificationService;
     private readonly TpConfig _tpConfig = TaskContext.Instance().Config.TpConfig;
 
+    public IStringLocalizer<CommonSettingsPageViewModel> Localizer { get; }
+
     private string _selectedArea = string.Empty;
 
 
@@ -52,11 +54,13 @@ public partial class CommonSettingsPageViewModel : ViewModel
     [ObservableProperty] private List<string> _adventurersGuildCountry = ["无", "枫丹", "稻妻", "璃月", "蒙德"];
 
     public CommonSettingsPageViewModel(IConfigService configService, INavigationService navigationService,
-        NotificationService notificationService)
+        NotificationService notificationService,
+        IStringLocalizer<CommonSettingsPageViewModel> localizer)
     {
         Config = configService.Get();
         _navigationService = navigationService;
         _notificationService = notificationService;
+        Localizer = localizer;
         InitializeCountries();
         InitializeMiyousheCookie();
         // 初始化OCR模型选择
@@ -70,17 +74,25 @@ public partial class CommonSettingsPageViewModel : ViewModel
     public ObservableCollection<string> MapPathingTypes { get; } = ["SIFT", "TemplateMatch"];
 
     [ObservableProperty] private FrozenDictionary<string, string> _languageDict =
-        new string[] { "zh-Hans", "zh-Hant", "en", "fr" }
+        new string[] { "zh-Hans", "zh-Hant", "en", "fr", "vi" }
             .ToFrozenDictionary(
                 c => c,
                 c =>
                 {
-                    CultureInfo.CurrentUICulture = new CultureInfo(c);
                     var stringLocalizer = App.GetService<IStringLocalizer<CultureInfoNameToKVPConverter>>() ??
                                           throw new NullReferenceException();
-                    return stringLocalizer["简体中文"].ToString();
+                    return stringLocalizer.WithCultureGet(new CultureInfo(c), "简体中文");
                 }
             );
+
+    private static void ApplyUiCulture(string cultureName)
+    {
+        var culture = new CultureInfo(cultureName);
+        CultureInfo.CurrentCulture = culture;
+        CultureInfo.CurrentUICulture = culture;
+        CultureInfo.DefaultThreadCurrentCulture = culture;
+        CultureInfo.DefaultThreadCurrentUICulture = culture;
+    }
 
     public string SelectedCountry
     {
@@ -332,6 +344,13 @@ public partial class CommonSettingsPageViewModel : ViewModel
     {
         await Launcher.LaunchUriAsync(
             new Uri("https://github.com/babalae/better-genshin-impact/actions/workflows/publish.yml"));
+    }
+
+    [RelayCommand]
+    private void OnUiLangSelectionChanged(KeyValuePair<string, string> type)
+    {
+        ApplyUiCulture(type.Key);
+        OnPropertyChanged(nameof(Localizer));
     }
 
     [RelayCommand]

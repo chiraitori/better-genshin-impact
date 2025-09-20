@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ContextOpenDirectory" xml:space="preserve">
+    <value>Open folder</value>
+  </data>
+  <data name="ContextRefresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="ContextRunScript" xml:space="preserve">
+    <value>Run script</value>
+  </data>
+  <data name="CustomScriptsDescription" xml:space="preserve">
+    <value>You can call BetterGI capabilities in Genshin Impact through JavaScript. Please use them inside the Scheduler!</value>
+  </data>
+  <data name="CustomScriptsGuideLink" xml:space="preserve">
+    <value>Read the JavaScript scripting guide</value>
+  </data>
+  <data name="CustomScriptsTitle" xml:space="preserve">
+    <value>Custom JavaScript scripts (experimental)</value>
+  </data>
+  <data name="OpenScriptsFolder" xml:space="preserve">
+    <value>Open scripts folder</value>
+  </data>
+  <data name="ScriptDirectoryHeader" xml:space="preserve">
+    <value>Folder</value>
+  </data>
+  <data name="ScriptHasConfigurationWarning" xml:space="preserve">
+    <value>This script contains configuration. It may not run correctly without editing it. Please add it to the Scheduler and update the configuration before using it!</value>
+  </data>
+  <data name="ScriptLoadFailed" xml:space="preserve">
+    <value>Failed to load script {0}: {1}</value>
+  </data>
+  <data name="ScriptNameHeader" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="ScriptRepository" xml:space="preserve">
+    <value>Script repository</value>
+  </data>
+  <data name="ScriptVersionHeader" xml:space="preserve">
+    <value>Version</value>
+  </data>
+</root>

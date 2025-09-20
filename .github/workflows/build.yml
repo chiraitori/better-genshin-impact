@@ -1,0 +1,38 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: recursive
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Restore dependencies
+        run: dotnet restore BetterGenshinImpact.sln
+
+      - name: Build
+        run: dotnet build BetterGenshinImpact.sln --configuration Release --no-restore
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: bettergi-build
+          path: |
+            BetterGenshinImpact/bin/Release/
+            Fischless.GameCapture/bin/Release/
+            Fischless.HotkeyCapture/bin/Release/
+            Fischless.WindowsInput/bin/Release/
+
+      - name: Run tests
+        run: dotnet test BetterGenshinImpact.sln --configuration Release --no-build
